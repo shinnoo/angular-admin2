@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { NgZorroAntdModule } from '../ng-zorro-antd.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
 
 
 
@@ -14,8 +17,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    NgZorroAntdModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NzIconModule,
+    NzLayoutModule,
+    NzBreadCrumbModule,
+    NzMenuModule
   ],
   exports :[DashboardComponent],
 })

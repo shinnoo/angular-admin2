@@ -8,8 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 import en from '@angular/common/locales/en';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 import { IconDefinition } from '@ant-design/icons-angular';
-import { NZ_ICONS } from 'ng-zorro-antd/icon';
-import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+import { NzIconModule, NZ_ICONS } from 'ng-zorro-antd/icon';
+import { NZ_I18N, en_US, NzI18nModule } from 'ng-zorro-antd/i18n';
 
 registerLocaleData(en);
 
